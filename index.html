@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
@@ -20,11 +20,15 @@
                 <div class="header-box_item header-menu">
                     <ul>
                         <li><a href="" name="#home">Home</a></li>
-                        <li><a href="" name="#about">About</a></li>
+                        <li><a href="" name="#about">Advantages</a></li>
                         <li><a href="" name="#skills">Skills</a></li>
                         <li><a href="" name="#prices">Prices</a></li>
+                        <li><a href="" name="#prices">Portfolio</a></li>
                         <li><a href="" name="#contacts">Contacts</a></li>
                     </ul>
+                </div>
+                <div class="header-box_item header-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 64 64" width="48px" height="48px"><path d="M51 46c1.104 0 2 .895 2 2 0 1.105-.896 2-2 2-.601 0-37.399 0-38 0-1.104 0-2-.895-2-2 0-1.105.896-2 2-2C13.601 46 50.399 46 51 46zM51 30c1.104 0 2 .895 2 2 0 1.105-.896 2-2 2-.601 0-37.399 0-38 0-1.104 0-2-.895-2-2 0-1.105.896-2 2-2C13.601 30 50.399 30 51 30zM51 14c1.104 0 2 .895 2 2 0 1.105-.896 2-2 2-.601 0-37.399 0-38 0-1.104 0-2-.895-2-2 0-1.105.896-2 2-2C13.601 14 50.399 14 51 14z"/></svg>
                 </div>
                 <div class="header-box_item header-contacts">
                     <a href="tg.me">
@@ -42,11 +46,14 @@
             <div class="start-box">
                 <h1>Website development</h1>
                 <p>Get in touch with me by convenient way</a></p>
-                <a href="#">Telegram</a>
+                <div class="start-box_buttons">
+                    <a href="#">Send me e-mail</a>
+                    <a href="#">Type me in messengers</a>
+                </div>
             </div>
         </div>
     </section>
-    <section id="about">
+    <!-- <section id="about">
         <div class="container">
             <h3 class="title">About me</h3>
             <div class="about-box">
@@ -54,8 +61,19 @@
                     <img src="https://miro.medium.com/max/1000/1*L4Rl1AP4ImO2SyRn_oGxLA.jpeg" alt="Me" width="100%">
                 </div>
                 <div class="about-box_item">
-                    <p>Hi, I'm Artyom - web-developer. I hope help you.</p> <p>Quia vero nobis incidunt consectetur soluta aperiam, in voluptas pariatur ipsa nam iure numquam alias aliquid molestiae assumenda veritatis quis vel quaerat temporibus obcaecati. Saepe temporibus nesciunt cumque cum, ratione officia, obcaecati iure fugiat ad atque eveniet impedit sunt maxime corrupti. Cumque et maiores rem debitis nemo vero.</p>
+                    <p><strong>Hi, I'm Artyom - web-developer. I glad that you find this site, I hope help you.</strong></p> <p>My experience and passion to work creates me very productive.</p>
                 </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="advantages">
+        <div class="container">
+            <h3 class="title">Advantages</h3>
+            <div class="advantages-box">
+                <div class="advantages-box_item">Lower cost</div>
+                <div class="advantages-box_item">Speed & Quality</div>
+                <div class="advantages-box_item">Free support</div>
+                <div class="advantages-box_item">Always in touch</div>
             </div>
         </div>
     </section>
@@ -68,10 +86,10 @@
                 <div class="skills-box_item item3">Git</div>
                 <div class="skills-box_item item4">Joomla CMS</div>
                 <div class="skills-box_item item5">CCS3</div>
-                <div class="skills-box_item item6">PHP</div>    
-                <div class="skills-box_item item7">HTML5</div>
+                <div class="skills-box_item item6">PHP</div>
+                <div class="skills-box_item item7">Bootstrap</div>
                 <div class="skills-box_item item8">Wordpress</div>
-                <div class="skills-box_item item9">Webasyst</div>
+                <div class="skills-box_item item9">HTML5</div>
                 <div class="skills-box_item item10">React</div>
             </div>
         </div>
@@ -140,13 +158,41 @@
     <footer id="footer">
         <div class="container">
             <div class="footer-box">
-                <div class="footer-box_item footer-logo">
+                <!-- <div class="footer-box_item footer-logo">
                     <a href="/"><img src="./img/logo.png" alt="Website development" width="100"></a>
-                </div>
+                </div> -->
                 <div class="footer-box_item footer-middle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio distinctio delectus, deserunt numquam voluptatum dolores inventore assumenda aspernatur repellat accusamus error necessitatibus aliquid. Eveniet voluptatem quo sint laudantium maiores id odit animi adipisci quaerat vitae nostrum, placeat, ipsum obcaecati!
+                    <h5>About me</h5>
+                    <p><strong>Hi, I'm Artyom - web-developer. I glad that you find this site, I hope help you.</strong></p> <p>My experience and passion to work creates me very productive.</p>
+                </div>
+                <div class="footer-box_item footer-menu">
+                    <h5>Useful links</h5>
+                    <ul class="links">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Advantages</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Prices</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box_item footer-news">
+                    <h5>Articles</h5>
+                    <ul>
+                        <li>
+                            <article>
+                                <a href="">How create div element?</a>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <a href="">How create script element?</a>
+                            </article>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-box_item">
+                    <h5>My socials</h5>
                     <ul>
                         <li>
                             <a href="">
@@ -161,6 +207,11 @@
                         <li>
                             <a href="">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 64 64" width="48px" height="48px"><path d="M 31.820312 12 C 13.439312 12 12 13.439312 12 31.820312 L 12 32.179688 C 12 50.560688 13.439312 52 31.820312 52 L 32.179688 52 C 50.560688 52 52 50.560688 52 32.179688 L 52 32 C 52 13.452 50.548 12 32 12 L 31.820312 12 z M 28 16 L 36 16 C 47.129 16 48 16.871 48 28 L 48 36 C 48 47.129 47.129 48 36 48 L 28 48 C 16.871 48 16 47.129 16 36 L 16 28 C 16 16.871 16.871 16 28 16 z M 41.994141 20 C 40.889141 20.003 39.997 20.900859 40 22.005859 C 40.003 23.110859 40.900859 24.003 42.005859 24 C 43.110859 23.997 44.003 23.099141 44 21.994141 C 43.997 20.889141 43.099141 19.997 41.994141 20 z M 31.976562 22 C 26.454563 22.013 21.987 26.501437 22 32.023438 C 22.013 37.545437 26.501437 42.013 32.023438 42 C 37.545437 41.987 42.013 37.498562 42 31.976562 C 41.987 26.454563 37.498562 21.987 31.976562 22 z M 31.986328 26 C 35.299328 25.992 37.992 28.673328 38 31.986328 C 38.007 35.299328 35.326672 37.992 32.013672 38 C 28.700672 38.008 26.008 35.327672 26 32.013672 C 25.992 28.700672 28.673328 26.008 31.986328 26 z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 64 64" width="48px" height="48px"><path d="M 32 10 C 19.85 10 10 19.85 10 32 C 10 44.15 19.85 54 32 54 C 44.15 54 54 44.15 54 32 C 54 19.85 44.15 10 32 10 z M 32 14 C 41.941 14 50 22.059 50 32 C 50 40.238706 44.458716 47.16934 36.904297 49.306641 C 36.811496 49.1154 36.747844 48.905917 36.753906 48.667969 C 36.784906 47.458969 36.753906 44.637563 36.753906 43.601562 C 36.753906 41.823563 35.628906 40.5625 35.628906 40.5625 C 35.628906 40.5625 44.453125 40.662094 44.453125 31.246094 C 44.453125 27.613094 42.554688 25.720703 42.554688 25.720703 C 42.554688 25.720703 43.551984 21.842266 42.208984 20.197266 C 40.703984 20.034266 38.008422 21.634812 36.857422 22.382812 C 36.857422 22.382813 35.034 21.634766 32 21.634766 C 28.966 21.634766 27.142578 22.382812 27.142578 22.382812 C 25.991578 21.634813 23.296016 20.035266 21.791016 20.197266 C 20.449016 21.842266 21.445312 25.720703 21.445312 25.720703 C 21.445312 25.720703 19.546875 27.611141 19.546875 31.244141 C 19.546875 40.660141 28.371094 40.5625 28.371094 40.5625 C 28.371094 40.5625 27.366329 41.706312 27.265625 43.345703 C 26.675939 43.553637 25.872132 43.798828 25.105469 43.798828 C 23.255469 43.798828 21.849984 42.001922 21.333984 41.169922 C 20.825984 40.348922 19.7845 39.660156 18.8125 39.660156 C 18.1725 39.660156 17.859375 39.981656 17.859375 40.347656 C 17.859375 40.713656 18.757609 40.968484 19.349609 41.646484 C 20.597609 43.076484 20.574484 46.292969 25.021484 46.292969 C 25.547281 46.292969 26.492043 46.171872 27.246094 46.068359 C 27.241926 47.077908 27.230199 48.046135 27.246094 48.666016 C 27.251958 48.904708 27.187126 49.114952 27.09375 49.306641 C 19.540258 47.168741 14 40.238046 14 32 C 14 22.059 22.059 14 32 14 z"/></svg>
                             </a>
                         </li>
                     </ul>
