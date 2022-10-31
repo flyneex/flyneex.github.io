@@ -109,7 +109,8 @@ section {
             font-size: 24px;
             color: #D62353;
             a {
-                color: #2359D6;
+                background-color: #2359D6;
+                color: #fff;
                 font-size: 26px;
                 text-decoration: underline;
             }
@@ -122,12 +123,11 @@ section {
     flex-wrap: wrap;
     column-gap: 30px;
     &_item {
-        width: 50%;
+        width: calc(50% - 30px);
         img {
-            width: 500px;
-            height: 500px;
+            max-width: 100%;
             object-fit: cover;
-            border-radius: 50%;
+            border-radius: 14px;
             // animation: turn 5s linear infinite;
         }
         p {
@@ -198,11 +198,12 @@ section {
     flex-wrap: wrap;
     column-gap: 30px;
     &_item {
+        flex-grow: 1;
         height: 400px;
         border: 2px solid #D62353;
         padding: 2.3em;
         border-radius: 14px;
-        width: 33.33%;
+        width: calc(33.33% - 30px);
         box-shadow: 0 10px 30px rgba(36 36 36 / 30%);
         h4 {
             position: relative;
@@ -247,7 +248,7 @@ section {
     column-gap: 30px;
     &_item {
         flex-grow: 1;
-        width: calc(33.33% -30px);
+        width: calc(33.33% - 30px);
         img {
             width: 100%;
             border-radius: 14px;
@@ -270,10 +271,13 @@ footer {
     }  
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1399px) {
     .container {
         padding: 2.75rem;
     }
+}
+
+@media (max-width: 1365px) {
     .prices-box_item,
     .portfolio-box_item {
         width: calc(50% - 15px);
@@ -282,7 +286,9 @@ footer {
 }
 
 @media (max-width: 991px) {
-    .prices-box_item {
+    .prices-box_item,
+    .portfolio-box_item,
+    .about-box_item {
         width: 100%;
     }
 }
