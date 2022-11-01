@@ -5,7 +5,7 @@ road = document.getElementById('road'),
 text = document.getElementById('text')
 
 window.addEventListener('scroll', function() {
-    let value = window.scrollY
+    let value = window.pageYOffset
 
     bg.style.top = value * 0.5 + 'px'
     moon.style.left = -value * 0.5 + 'px'
