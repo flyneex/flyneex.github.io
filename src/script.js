@@ -14,3 +14,31 @@ window.addEventListener('scroll', function() {
     text.style.top = value * 1 + 'px'
 })
 
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 140) {
+      document.getElementById('header').classList.add('fixed')
+    } else {
+      document.getElementById('header').classList.remove('fixed')
+    }
+})
+
+const menuBtn = document.querySelector('.header-bar svg'),
+menuSide = document.querySelector('.header-menu'),
+crossBtn = document.querySelector('.absolute-menu-cross')
+// crossBtn = window.getComputedStyle(elementCross, ':after')
+
+menuBtn.addEventListener('click', asideMenu)
+function asideMenu() {
+  menuSide.classList.toggle('active-menu')
+  document.body.style.overflow = 'hidden'
+}
+
+crossBtn.addEventListener('click', function() {
+  menuSide.classList.remove('active-menu')
+})
+
+document.addEventListener('mouseup', e => {
+  if (!menuSide.contains(e.target)) {
+    menuSide.classList.remove('active-menu')
+  }
+})
