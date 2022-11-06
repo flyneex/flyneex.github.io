@@ -35,6 +35,7 @@ function asideMenu() {
 
 crossBtn.addEventListener('click', function() {
   menuSide.classList.remove('active-menu')
+  document.body.style.overflow = 'unset'
 })
 
 document.addEventListener('mouseup', e => {
@@ -42,3 +43,5 @@ document.addEventListener('mouseup', e => {
     menuSide.classList.remove('active-menu')
   }
 })
+
+const rt = document.querySelector(body)
